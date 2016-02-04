@@ -10,7 +10,7 @@ class Polls(db.Model):
     pilihan = db.Column(db.String(80))
     created_time = db.Column(db.DateTime)
 
-    def __inti__(self, nama_pemilih,pilihan,created_time):
+    def __init__(self, nama_pemilih,pilihan):
         self.nama_pemilih = nama_pemilih
         self.pilihan = pilihan
     def __repr__(self):
