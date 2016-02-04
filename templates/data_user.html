@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>all file mysql</title>
+	</head>
+	<body>
+		<h1>Data user</h1>
+		{% for poll in polls %}
+		<h3><a href="/polls/{{poll.id}}" style="text-decoration:none;">{{poll.nama_pemilih}}</a></h3>
+		<h4>pilihan:{{poll.pilihan}}</h4>
+		{% endfor %}
+	</body>
+</html>

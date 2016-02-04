@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User</title>
+	</head>
+	<body>
+		<h1>User</h1>
+		<p>nama user: {{polls.nama_pemilih}}</p>
+		<p>candidat pilihan: {{polls.pilihan}}</p>
+	<button><a href="/polls/update/{{polls.id}}" style="text-decoration:none">update</a></button>
+	<button><a href="/polls/delete/{{polls.id}}" style="text-decoration:none">delete</a></button>
+	<button><a href="/polls" style="text-decoration:none">show all data</a></button>
+	</body>
+</html>

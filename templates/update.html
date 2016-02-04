@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>update</title>
+	</head>
+	<body>
+		<h2>update data</h2>
+		<h4>kandidat</h4>
+		<p>1.jokoswati</p>
+		<p>2.prabowiwi</p>
+
+			<form action="/polls/update/{{polls.id}}" method="post">
+				<input type="text" name="pilihan"  value="{{request.form.nama_pemilih}}">
+				<input type="submit" value="ubah">
+			</form>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>add query</title>
+	</head>
+	<body>
+		<h3>Kandidat: </h3>
+		<p>1.jokoswati</p>
+		<p>2.prabowiwi</p>
+		<form action="/polls/add" method="POST">
+			<input type="text" placeholder="nama anda" name="name" value="{{request.form.name}}">
+			<input type="text" placeholder="pilihan" name="pilihan" value="{{request.form.pilihan}}">
+			<input type="submit" value="polls">
+		</form>
+	</body>
+</html>
